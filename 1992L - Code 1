@@ -214,5 +214,8 @@ button:active {
   -webkit-text-fill-color: transparent;
   animation: creditsSea 6s ease-in-out infinite;
 }
+.inner_window, .overlay_window, .question_window, .question_window p, .question_window label {
+  line-height: 1.45;
+}
 `;
 document.head.appendChild(style);
