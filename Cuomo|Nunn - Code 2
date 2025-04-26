@@ -3,7 +3,7 @@ campaignTrail_temp.cyoa = true;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/fuhj5e.png");
+    background-image: url("https://files.catbox.moe/icrb1w.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -89,18 +89,222 @@ cyoAdventure = function(a) {
     if(ans == 3367){
 campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/UNN6RB1.jpg';
 campaignTrail_temp.running_mate_last_name = 'Nunn';
+const customStyling = document.createElement("style");
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/fuhj5e.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.033em;
+    margin-right: -0.033em;
+  }
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+.inner_window_sign_display {
+  margin: 0;
+    margin-right: 0.033px;
+    margin-left: 0.033px;
+  height: 25%;
+  position: relative;
+  width: 35%;
+  height: 28%;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+#state_info {
+  margin: 5% 0 0;
+  height: 120%;
+  background-color: #FFFFFF;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+.inner_window_question {
+  background-color: #FFFFFF;
+  margin: 0
+  padding-top: .3em;
+  border-style: double;
+  border-color: #C9C9C9;
+  text-align: center;
+  height: 54%;
+  position: relative;
+  clear: both;
+}
+`;
+document.head.appendChild(customStyling);
     }
     if(ans == 3368){
 campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/UNN6RB1.jpg';
 campaignTrail_temp.running_mate_last_name = 'Nunn';
+const customStyling = document.createElement("style");
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/fuhj5e.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.033em;
+    margin-right: -0.033em;
+  }
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+.inner_window_sign_display {
+  margin: 0;
+    margin-right: 0.033px;
+    margin-left: 0.033px;
+  height: 25%;
+  position: relative;
+  width: 35%;
+  height: 28%;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+#state_info {
+  margin: 5% 0 0;
+  height: 120%;
+  background-color: #FFFFFF;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+.inner_window_question {
+  background-color: #FFFFFF;
+  margin: 0
+  padding-top: .3em;
+  border-style: double;
+  border-color: #C9C9C9;
+  text-align: center;
+  height: 54%;
+  position: relative;
+  clear: both;
+}
+`;
+document.head.appendChild(customStyling);
     }
     if(ans == 3369){
 campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/UNN6RB1.jpg';
 campaignTrail_temp.running_mate_last_name = 'Nunn';
+const customStyling = document.createElement("style");
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/fuhj5e.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.033em;
+    margin-right: -0.033em;
+  }
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+.inner_window_sign_display {
+  margin: 0;
+    margin-right: 0.033px;
+    margin-left: 0.033px;
+  height: 25%;
+  position: relative;
+  width: 35%;
+  height: 28%;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+#state_info {
+  margin: 5% 0 0;
+  height: 120%;
+  background-color: #FFFFFF;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+.inner_window_question {
+  background-color: #FFFFFF;
+  margin: 0
+  padding-top: .3em;
+  border-style: double;
+  border-color: #C9C9C9;
+  text-align: center;
+  height: 54%;
+  position: relative;
+  clear: both;
+}
+`;
+document.head.appendChild(customStyling);
     }
     if(ans == 4467){
 campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/UNN6RB1.jpg';
 campaignTrail_temp.running_mate_last_name = 'Nunn';
+const customStyling = document.createElement("style");
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/fuhj5e.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.033em;
+    margin-right: -0.033em;
+  }
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+.inner_window_sign_display {
+  margin: 0;
+    margin-right: 0.033px;
+    margin-left: 0.033px;
+  height: 25%;
+  position: relative;
+  width: 35%;
+  height: 28%;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+#state_info {
+  margin: 5% 0 0;
+  height: 120%;
+  background-color: #FFFFFF;
+  border-style: double;
+  border-color: #C9C9C9;
+}
+.inner_window_question {
+  background-color: #FFFFFF;
+  margin: 0
+  padding-top: .3em;
+  border-style: double;
+  border-color: #C9C9C9;
+  text-align: center;
+  height: 54%;
+  position: relative;
+  clear: both;
+}
+`;
+document.head.appendChild(customStyling);
     }
 }
 campaignTrail_temp.questions_json = JSON.parse("[{\"model\": \"campaign_trail.question\", \"pk\": 717, \"fields\": {\"priority\": 1, \"description\": \"(DEC. 1991) It looked very bad for a while, but at the last minute, you were able to resolve a budget crisis in your home state of New York. Immediately afterwards, you boarded a private plane and made it to New Hampshire just in time to meet the filing deadline for the primary. As crowds of adoring Democrats and anxious journalists await to hear your first statement as a presidential candidate, what will you tell them?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 718, \"fields\": {\"priority\": 2, \"description\": \"(FEB. 1992) With Tom Harkin in the race, the Iowa caucus is being practically ignored, leaving the New Hampshire primary, even more important - polls show you ahead of the competitors, most notably Paul Tsongas, though Governor Clinton is gaining. The rest of the February, and of course, March primaries are upcoming as well. Where would you like to focus, Governor?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 618, \"fields\": {\"priority\": 2, \"description\": \"(MARCH 1992) In the wake of his own recent controversy, it was revealed that your chief rival, Bill Clinton also made some disparaging remarks about you in a phone call with a woman named Gennifer Flowers. In it, he called you ‘’a mean son of a bitch’’ and said you ‘’act like’’ a mafioso. Do you have any comments to make about this?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 737, \"fields\": {\"priority\": 2, \"description\": \"(JUL. 1992) Congratulations Governor, while Bill Clinton gave you a tough battle, you have emerged as the Democratic presidential nominee, after almost a decade of baited breath. As you walk out onto the stage in Madison Square Garden to a raucous hometown welcome, what will be your message as you kick off the campaign?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 729, \"fields\": {\"priority\": 3, \"description\": \"There is a lot of debate about whether or not homosexuals should be allowed to serve in the military. What are your thoughts?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 629, \"fields\": {\"priority\": 3, \"description\": \"President Bush has come under fire from all sides for breaking his infamous “no taxes” pledge made at his 1988 RNC acceptance speech. Is there anything you would like to say about this?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 756, \"fields\": {\"priority\": 3, \"description\": \"Despite entering the race in February 1992 and achieving remarkable numbers in the polls, businessman Ross Perot has announced his intention to drop out. It is unclear where his support will go, Mr. Governor.\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 732, \"fields\": {\"priority\": 3, \"description\": \"What is your opinion on environmentalism? Will you devote additional funding to this as President?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 719, \"fields\": {\"priority\": 3, \"description\": \"To what extent will you attack Bush on the economy this fall?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 745, \"fields\": {\"priority\": 4, \"description\": \"What are your thoughts on NAFTA. Do you think this is a good trade agreement?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 742, \"fields\": {\"priority\": 4, \"description\": \"The conservative, and some might say ''hawkish'' Senator Sam Nunn was your selection for Vice President - this was seen as an obvious move to unite the party, but regardless, some liberals are unhappy. Would you like to say anything about your running mate?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 749, \"fields\": {\"priority\": 4, \"description\": \"Do you support additional gun control measures at the federal level?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 721, \"fields\": {\"priority\": 4, \"description\": \"Is there anything you’d like to say about the Rodney King riots?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 727, \"fields\": {\"priority\": 4, \"description\": \"How much, if at all, will you emphasize your Catholicism during the campaign?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 754, \"fields\": {\"priority\": 4, \"description\": \"Will you push for healthcare reform as president, and if so, how far are you willing to go?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 724, \"fields\": {\"priority\": 4, \"description\": \"At a town hall in Cincinnati last night, one of Bush’s supporters strongly insinuated that you were in league with the mafia, and won the Democratic nomination through backroom chicanery and extortion. This has become a common attack against you amongst certain right wing groups. Bush immediately shut down the supporter’s line of questioning and stated that he would like to stick to the issues, but the story was featured prominently in the news that night. Is there anything you would like to say in response to this?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 720, \"fields\": {\"priority\": 4, \"description\": \"Would you like your wife, Matilda, to be involved in the campaign at all? And if so, in what role?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 723, \"fields\": {\"priority\": 4, \"description\": \"Some pro-choice advocates are concerned about your conflicted views on abortion. What are your thoughts on this issue?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 728, \"fields\": {\"priority\": 4, \"description\": \"Once again, surprising everyone, Ross Perot has declared his re-entry into the Presidential race. It remains unclear how this will impact the dynamics of the race, but it's evident that his polling is nowhere near where it was in the summer.\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 628, \"fields\": {\"priority\": 4, \"description\": \"What are your thoughts on foreign policy now that the Cold War is over? Do you have any plans to reduce defense spending?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 753, \"fields\": {\"priority\": 4, \"description\": \"Are you willing to participate in a debate with your opponents, George Bush, and Ross Perot?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 726, \"fields\": {\"priority\": 4, \"description\": \"The Democratic Leadership Council, a group of centrist Democrats that includes Bill Clinton, Al Gore, and Joe Biden, amongst others, opposed your nomination and is still unsure about whether to officially support your campaign or not. Despite your cold relationship with each other, and considering your need to make inroads with moderate Democrats, will you meet with them and try to get an endorsement?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 722, \"fields\": {\"priority\": 4, \"description\": \"Will you continue to attack Bush over the Iran-Contra affair?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 725, \"fields\": {\"priority\": 4, \"description\": \"Will you make any changes to the War On Drugs as president?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 625, \"fields\": {\"priority\": 4, \"description\": \"Do you want to highlight any of your accomplishments as Governor of New York while on the campaign trail?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 743, \"fields\": {\"priority\": 4, \"description\": \"Are you willing to rule out any further increases to the federal income tax, if elected President?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 747, \"fields\": {\"priority\": 5, \"description\": \"There has been talk amongst women’s rights organizations of reviving efforts to ratify the Equal Rights Amendment (ERA) via the “Three State Strategy”, despite pushback from social conservatives. Would you support these efforts as President?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 730, \"fields\": {\"priority\": 5, \"description\": \"Public opinion was split at first on the Gulf War, but that changed dramatically after a quick victory for the allied Coalition. Did you support our actions in this engagement, and would you support further military intervention in the Middle East going forward?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 530, \"fields\": {\"priority\": 5, \"description\": \"You have come under considerable criticism from conservatives for your consistent, outspoken opposition to the death penalty, including multiple vetoes of legislation that would establish capital punishment in New York. How would you like to respond to these attacks?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 430, \"fields\": {\"priority\": 5, \"description\": \"In a new ad, the Bush campaign insisted that your liberal policies would cause the deficit to skyrocket and destroy the economic progress made over the last 12 years. How will you respond to this?\", \"likelihood\": 1.0}}, {\"model\": \"campaign_trail.question\", \"pk\": 755, \"fields\": {\"priority\": -1, \"description\": \"Where will you spend the final days of the campaign?\", \"likelihood\": 1.0}}]");
