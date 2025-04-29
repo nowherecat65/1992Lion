@@ -6,7 +6,7 @@ campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 15, \"c
 campaignTrail_temp.temp_election_list = [{"id": 15, "year": 1988, "is_premium": 0, "display_year": "1992Lion"}];
 HistHexcolour=["#286FD0","#B52421","#70537A","#1AAE3A"]; HistName=[" Mario Cuomo"," George Bush"," Ross Perot"," Bo Grtiz/Other"]; HistEV=[340,198,0,0]; HistPV=["39,413,751","36,751,047","13,449,542","766,393"]; HistPVP=["43.6%","40.7%","14.9%","0.8%"];
 campaignTrail_temp.credits =
-  '<span style="color:#0D0D0D"><b>u/Alex72598, & .theanswerisme</b></span>';
+  '<span style="color:#0D0D0D">u/Alex72598, & .theanswerisme</span>';
 document.getElementById("header").src = "https://files.catbox.moe/5xyl49.png"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#050A0F"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#113A99"
