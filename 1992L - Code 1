@@ -12,8 +12,8 @@ document.getElementById("header").src = "https://files.catbox.moe/5xyl49.png"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#050A0F"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#113A99"
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title
-$(".container")[0].style.backgroundImage = "url(https://files.catbox.moe/7a9dxa.png)" 
-$("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/z2gv3l.png)" 
+$(".container")[0].style.backgroundImage = "url(https://i.imgur.com/IqkXcIS.png)" 
+$("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/LHttFUW.png)" 
 document.body.background = "https://i.imgur.com/Ep9ShMu.png"
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#8a0f18",
