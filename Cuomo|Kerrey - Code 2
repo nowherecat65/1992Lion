@@ -87,7 +87,7 @@ cyoAdventure = function(a) {
         campaignTrail_temp.candidate_json[2]["fields"].last_name = "Perot";
     }
     if(ans == 3367){
-campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/Cz1iWGo.jpeg';
+campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/o3x7q2.png';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
@@ -143,7 +143,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 3368){
-campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/Cz1iWGo.jpeg';
+campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/o3x7q2.png';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
@@ -199,7 +199,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 3369){
-campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/Cz1iWGo.jpeg';
+campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/o3x7q2.png';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
@@ -255,7 +255,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 4467){
-campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/Cz1iWGo.jpeg';
+campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/o3x7q2.png';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
