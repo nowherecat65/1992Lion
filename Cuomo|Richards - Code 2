@@ -93,7 +93,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/ch3wxg.png");
+    background-image: url("https://files.catbox.moe/nfd76k.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -149,7 +149,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/ch3wxg.png");
+    background-image: url("https://files.catbox.moe/nfd76k.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -205,7 +205,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/ch3wxg.png");
+    background-image: url("https://files.catbox.moe/nfd76k.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -261,7 +261,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/ch3wxg.png");
+    background-image: url("https://files.catbox.moe/nfd76k.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -347,6 +347,3 @@ campaignTrail_temp.answer_feedback_flg = 1;
 e.election_json[0].fields.has_visits = 0;
 campaignTrail_temp.game_start_logging_id = '3662498';
 campaignTrail_temp.global_parameter_json = JSON.parse("[{\"model\": \"campaign_trail.global_parameter\", \"pk\": 1, \"fields\": {\"vote_variable\": 1.133, \"max_swing\": 0.127, \"start_point\": 1.00, \"candidate_issue_weight\": 10.0, \"running_mate_issue_weight\": 3.0, \"issue_stance_1_max\": -0.71, \"issue_stance_2_max\": -0.3, \"issue_stance_3_max\": -0.125, \"issue_stance_4_max\": 0.125, \"issue_stance_5_max\": 0.3, \"issue_stance_6_max\": 0.71, \"global_variance\": 0.007, \"state_variance\": 0.001, \"question_count\": 31, \"default_map_color_hex\": \"#B2B2B2\", \"no_state_map_color_hex\": \"#919191\"}}]");
-
-
-
