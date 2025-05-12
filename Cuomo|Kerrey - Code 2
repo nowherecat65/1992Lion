@@ -93,7 +93,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/rm71ic.png");
+    background-image: url("https://files.catbox.moe/z2q6k0.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -149,7 +149,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/rm71ic.png");
+    background-image: url("https://files.catbox.moe/z2q6k0.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -205,7 +205,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/rm71ic.png");
+    background-image: url("https://files.catbox.moe/z2q6k0.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -261,7 +261,7 @@ e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/rm71ic.png");
+    background-image: url("https://files.catbox.moe/z2q6k0.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
