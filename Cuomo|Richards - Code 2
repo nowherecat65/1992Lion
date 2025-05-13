@@ -3,7 +3,7 @@ campaignTrail_temp.cyoa = true;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/icrb1w.png");
+    background-image: url("https://i.postimg.cc/2S0RJKDC/tw3cikfssf-13-1-1-14-1-7-4-1-1-6-1.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
