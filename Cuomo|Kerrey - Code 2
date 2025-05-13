@@ -87,13 +87,13 @@ cyoAdventure = function(a) {
         campaignTrail_temp.candidate_json[2]["fields"].last_name = "Perot";
     }
     if(ans == 3367){
-campaignTrail_temp.running_mate_image_url = 'https://postimg.cc/NLCHBLzr';
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/GhdJPyPz/Cz1iWGo.jpg';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://postimg.cc/qNsqh7jw");
+    background-image: url("https://i.postimg.cc/T3SDsLbz/icrb1w-10-1-6.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -143,13 +143,13 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 3368){
-campaignTrail_temp.running_mate_image_url = 'https://postimg.cc/NLCHBLzr';
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/GhdJPyPz/Cz1iWGo.jpg';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://postimg.cc/qNsqh7jw");
+    background-image: url("https://i.postimg.cc/T3SDsLbz/icrb1w-10-1-6.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -199,13 +199,13 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 3369){
-campaignTrail_temp.running_mate_image_url = 'https://postimg.cc/NLCHBLzr';
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/GhdJPyPz/Cz1iWGo.jpg';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://postimg.cc/qNsqh7jw");
+    background-image: url("https://i.postimg.cc/T3SDsLbz/icrb1w-10-1-6.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
@@ -255,13 +255,13 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     if(ans == 4467){
-campaignTrail_temp.running_mate_image_url = 'https://postimg.cc/NLCHBLzr';
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/GhdJPyPz/Cz1iWGo.jpg';
 campaignTrail_temp.running_mate_last_name = 'Kerrey';
 e.election_json[0].fields.has_visits = 1;
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://postimg.cc/qNsqh7jw");
+    background-image: url("https://i.postimg.cc/T3SDsLbz/icrb1w-10-1-6.png");
     background-size: cover;
     border-color: #B2B2B2;    
     border-width: .01em;
