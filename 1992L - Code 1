@@ -10,10 +10,10 @@ campaignTrail_temp.credits =
 corrr = `\n<h2 style="margin-bottom: 4px; color: #f5f5f5; font-weight: bold; text-shadow: 1px 1px 0 #8a0f18, 0 0 3px #000; font-size: 42px; background: linear-gradient(to bottom, #0d0d13, #1b0f1f, #0d1320); padding: 1px 2px; border: 0.75px solid #6079a0; border-radius: 1px;"><span class="typewriter">1992Lion</span></h2>`;
 document.getElementById("header").src = "https://i.postimg.cc/1zqD8bMH/5xyl49.png"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#050A0F"
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#113A99"
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#183F9C"
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title
-$(".container")[0].style.backgroundImage = "url(https://i.imgur.com/IqkXcIS.png)" 
-$("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/LHttFUW.png)" 
+$(".container")[0].style.backgroundImage = "url(https://i.postimg.cc/rwHhsQD9/maroon-subtle-gradient-720-1.png)" 
+$("#game_window")[0].style.backgroundImage = "url(https://i.postimg.cc/8CqnKtDC/lapis-subtle-gradient-720-1.png)" 
 document.body.background = "https://i.imgur.com/Ep9ShMu.png"
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#8a0f18",
@@ -36,7 +36,15 @@ style.innerHTML = `
     inset 0 0 2px rgba(255, 255, 255, 0.5),
     inset 0 0 0 1px rgba(0, 0, 0, 0.15),
     1px 1px 1px rgba(0, 0, 0, 0.08);
-  background-color: #f0efed;
+  background: linear-gradient(
+  180deg,
+  #f0efef 0%,
+  #efefef 20%,
+  #f1f1f1 40%,
+  #f0efef 60%,
+  #eeeeee 80%,
+  #f0efef 100%
+);
   border-radius: 2px;
 }
 
@@ -183,15 +191,15 @@ button:active {
   box-shadow: 0 0 1.125px rgba(50, 50, 90, 0.075);
 }
 .campaign_trail_start_emphasis {
-  background-color: #123A95;
+  background: linear-gradient(180deg, #1A419D 0%, #1B429D 100%);
 }
 .footer {
   color: #f5f5f5 !important;
   text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 #menu_container {
-background: linear-gradient(to bottom, #0C3494 0%, #0E38A5 50%, #103CAD 100%);
-border: 0.75px solid #0C3494;
+background: linear-gradient(to bottom, #1B419D 0%, #1A419D 50%, #19409C 100%);
+border: 0.05px solid #1A419D;
 box-shadow: 0 0 1.125px rgba(50, 50, 90, 0.075);
 }
 /* animated “sea of colors” for credits text */
