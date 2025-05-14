@@ -202,6 +202,18 @@ background: linear-gradient(to bottom, #1B419D 0%, #1A419D 50%, #19409C 100%);
 border: 0.05px solid #1A419D;
 box-shadow: 0 0 1.125px rgba(50, 50, 90, 0.075);
 }
+#state_result h3 {
+background: linear-gradient(to bottom, #8F171F 0%, #8F161E 50%, #8E161E 100%);
+}
+#overall_result h3 {
+background: linear-gradient(to bottom, #8F171F 0%, #8F161E 50%, #8E161E 100%);
+}
+#overall_result h3 {
+background: linear-gradient(to bottom, #8F171F 0%, #8F161E 50%, #8E161E 100%);
+}
+#state_info h3 {
+background: linear-gradient(to bottom, #8F171F 0%, #8F161E 50%, #8E161E 100%);
+}
 /* animated “sea of colors” for credits text */
 @keyframes creditsSea {
   0%   { background-position:   0% 50%; }
