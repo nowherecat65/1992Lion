@@ -13,7 +13,57 @@ nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#050A0F"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#183F9C"
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title
 $(".container")[0].style.backgroundImage = "url(https://i.postimg.cc/rwHhsQD9/maroon-subtle-gradient-720-1.png)" 
-$("#game_window")[0].style.backgroundImage = "url(https://i.postimg.cc/8CqnKtDC/lapis-subtle-gradient-720-1.png)" 
+$("#game_window")[0].style.backgroundImage = "url(https://i.postimg.cc/8CqnKtDC/lapis-subtle-gradient-720-1.png)"
+
+// Theme picker
+const themes = {
+  "Classic": "https://i.imgur.com/Ep9ShMu.png",
+  "Simple": "https://i.postimg.cc/rwHhsQD9/maroon-subtle-gradient-720-1.png",
+};
+
+const applyTheme = (themeName) => {
+  const url = themes[themeName];
+
+  if (themeName === "Default") {
+    document.body.style.backgroundImage = "";
+    document.body.style.backgroundSize = "";
+    document.body.style.backgroundPosition = "";
+    document.body.style.backgroundRepeat = "";
+    document.body.background = url;
+  }
+  else {
+    document.body.background = "";
+    Object.assign(document.body.style, {
+      backgroundImage: `url(${url})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed"
+    });
+  }
+};
+
+const setupPicker = () => {
+  const oldPicker = document.getElementById("themePicker");
+  const newPicker = document.createElement("select");
+  newPicker.id = "themePicker";
+
+  newPicker.innerHTML = Object.keys(themes)
+    .map(name => `<option value="${name}">${name}</option>`)
+    .join("");
+
+  newPicker.addEventListener("change", (e) => applyTheme(e.target.value));
+
+  if (oldPicker) {
+    oldPicker.replaceWith(newPicker);
+  } else {
+    newPicker.style.margin = "10px";
+    document.body.prepend(newPicker);
+  }
+};
+
+setupPicker();
+applyTheme("Default");
 document.body.background = "https://i.imgur.com/Ep9ShMu.png"
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#8a0f18",
