@@ -334,26 +334,16 @@ document.head.appendChild(style);
     background-color: rgba(255, 255, 255, 0.045) !important;
   }
 
-  @keyframes lionAdvisorScrimIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
   @keyframes lionAdvisorWindowIn {
     0% {
       opacity: 0;
-      transform: translate3d(0, 10px, 0) scale(0.982);
-      filter: brightness(0.988) saturate(0.988);
+      transform: translate3d(0, 7px, 0) scale(0.992);
+      filter: brightness(0.99) saturate(0.99);
     }
-    54% {
+    58% {
       opacity: 1;
-      transform: translate3d(0, -1.35px, 0) scale(1.0025);
-      filter: brightness(1.006) saturate(1.004);
-    }
-    78% {
-      opacity: 1;
-      transform: translate3d(0, 0.35px, 0) scale(0.9995);
-      filter: brightness(1.002) saturate(1.002);
+      transform: translate3d(0, -0.85px, 0) scale(1.0015);
+      filter: brightness(1.004) saturate(1.003);
     }
     100% {
       opacity: 1;
@@ -362,51 +352,29 @@ document.head.appendChild(style);
     }
   }
 
-  @keyframes lionAdvisorDetailIn {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, 4px, 0);
-    }
-    100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+  #feedback_overlay {
+    background: transparent !important;
+    opacity: 0 !important;
+    animation: none !important;
   }
 
-  #feedback_overlay.lion-advisor-feedback-scrim,
   #visit_overlay.lion-advisor-feedback-scrim {
-    background: rgba(12, 18, 26, 0.10) !important;
+    background: rgba(12, 18, 26, 0.055) !important;
     opacity: 1 !important;
     animation: none !important;
   }
 
-  #feedback_window.lion-advisor-feedback-window,
-  #visit_window.lion-advisor-feedback-window,
-  .inner_window.lion-advisor-feedback-window {
-    animation: lionAdvisorWindowIn 410ms var(--lion-motion-advisor-settle) both !important;
-    transform-origin: center 32%;
+  #visit_window.lion-advisor-feedback-window {
+    animation: lionAdvisorWindowIn 330ms var(--lion-motion-advisor-settle) both !important;
+    transform-origin: center 38%;
     backface-visibility: hidden;
-    contain: paint;
+    will-change: transform, opacity;
   }
 
-  #feedback_window.lion-advisor-feedback-window h3,
   #visit_window.lion-advisor-feedback-window h3,
-  .lion-advisor-feedback-window .lion-advisor-feedback-detail,
-  .lion-advisor-feedback-window .lion-advisor-feedback-action {
+  #visit_window.lion-advisor-feedback-window #visit_content,
+  #visit_window.lion-advisor-feedback-window #visit_buttons {
     backface-visibility: hidden;
-  }
-
-  #feedback_window.lion-advisor-feedback-window h3,
-  #visit_window.lion-advisor-feedback-window h3 {
-    animation: lionAdvisorDetailIn 360ms var(--lion-motion-advisor) 45ms both !important;
-  }
-
-  .lion-advisor-feedback-window .lion-advisor-feedback-detail {
-    animation: lionAdvisorDetailIn 360ms var(--lion-motion-advisor) 78ms both !important;
-  }
-
-  .lion-advisor-feedback-window .lion-advisor-feedback-action {
-    animation: lionAdvisorDetailIn 330ms var(--lion-motion-advisor) 118ms both !important;
   }
 
   #map_container,
@@ -415,8 +383,6 @@ document.head.appendChild(style);
   svg *,
   .state,
   path,
-  #visit_window:not(.lion-advisor-feedback-window),
-  #visit_window:not(.lion-advisor-feedback-window) *,
   #results_container,
   #results_container *,
   .final_results_table,
@@ -429,13 +395,9 @@ document.head.appendChild(style);
     input,
     label,
     .person_button,
-    #feedback_overlay.lion-advisor-feedback-scrim,
+    #feedback_overlay,
     #visit_overlay.lion-advisor-feedback-scrim,
-    #feedback_window.lion-advisor-feedback-window,
-    #visit_window.lion-advisor-feedback-window,
-    .lion-advisor-feedback-window,
-    .lion-advisor-feedback-detail,
-    .lion-advisor-feedback-action {
+    #visit_window.lion-advisor-feedback-window {
       animation: none !important;
       transition: none !important;
       transform: none !important;
@@ -477,66 +439,39 @@ document.head.appendChild(style);
     }, 150);
   }
 
-  function isStateVisitPrompt(panel) {
-    if (!panel || !panel.querySelector) return false;
-    if (panel.querySelector("#confirm_visit_button, #no_visit_button")) return true;
-    var text = (panel.textContent || "").slice(0, 220).toLowerCase();
-    return text.indexOf("chosen to visit") !== -1 || text.indexOf("is this correct") !== -1;
-  }
-
   function isAdvisorFeedbackPanel(panel) {
-    if (!panel || !panel.querySelector) return false;
-    if (panel.id === "feedback_window") return true;
-    if (panel.id !== "visit_window") return false;
-    if (isStateVisitPrompt(panel)) return false;
+    if (!panel || !panel.querySelector || panel.id !== "visit_window") return false;
+    if (!panel.querySelector("#no_feedback_button")) return false;
     var heading = panel.querySelector("h3");
     var headingText = heading ? (heading.textContent || "").replace(/\s+/g, " ").trim().toLowerCase() : "";
-    if (headingText !== "advisor feedback") return false;
-    if (panel.querySelector("#no_feedback_button")) return true;
-    return !!panel.querySelector("#ok_button") && (panel.textContent || "").toLowerCase().indexOf("advisor feedback") !== -1;
+    return headingText === "advisor feedback";
   }
 
-  function isMapOrVisitPanel(panel) {
-    if (!panel || !panel.closest) return false;
-    if (panel.closest("#map_container, #results_container, #state_result_container, #overall_result_container")) return true;
-    if (panel.id === "visit_window" && isStateVisitPrompt(panel)) return true;
-    var text = (panel.textContent || "").slice(0, 180).toLowerCase();
-    return text.indexOf("select a state") !== -1 || text.indexOf("visits left") !== -1 || text.indexOf("estimated support") !== -1;
-  }
-
-  function findAdvisorPanel(root) {
-    var candidates = [];
-    var feedback = document.getElementById("feedback_window");
+  function findAdvisorPanels(root) {
+    var panels = [];
     var visit = document.getElementById("visit_window");
-    if (feedback) candidates.push(feedback);
-    if (visit) candidates.push(visit);
+    if (visit) panels.push(visit);
     if (root && root.nodeType === 1) {
-      if ((root.id === "feedback_window" || root.id === "visit_window")) candidates.push(root);
+      if (root.id === "visit_window") panels.push(root);
       if (root.querySelectorAll) {
-        var nested = root.querySelectorAll("#feedback_window, #visit_window");
-        for (var i = 0; i < nested.length; i++) candidates.push(nested[i]);
+        var nested = root.querySelectorAll("#visit_window");
+        for (var i = 0; i < nested.length; i++) panels.push(nested[i]);
       }
     }
-    for (var j = 0; j < candidates.length; j++) {
-      if (isAdvisorFeedbackPanel(candidates[j]) && !isMapOrVisitPanel(candidates[j])) return candidates[j];
+    var seen = [];
+    var out = [];
+    for (var j = 0; j < panels.length; j++) {
+      if (seen.indexOf(panels[j]) === -1 && isAdvisorFeedbackPanel(panels[j])) {
+        seen.push(panels[j]);
+        out.push(panels[j]);
+      }
     }
-    return null;
+    return out;
   }
 
-  function markAdvisorChildren(panel) {
-    if (!panel || !panel.querySelectorAll) return;
-    var detailNodes = panel.querySelectorAll("p, ul, ol, li, blockquote, span, br");
-    for (var i = 0; i < detailNodes.length; i++) {
-      if (detailNodes[i].id === "ok_button" || detailNodes[i].id === "no_feedback_button") continue;
-      if (detailNodes[i].classList) detailNodes[i].classList.add("lion-advisor-feedback-detail");
-    }
-    var actionNodes = panel.querySelectorAll("button, input[type='button'], input[type='submit'], #ok_button, #no_feedback_button");
-    for (var j = 0; j < actionNodes.length; j++) {
-      if (actionNodes[j].classList) actionNodes[j].classList.add("lion-advisor-feedback-action");
-    }
-  }
-
-  function restartAnimation(panel) {
+  function restartAdvisorAnimation(panel) {
+    if (!panel || !panel.classList || panel.dataset.lionAdvisorAnimated === "1") return;
+    panel.dataset.lionAdvisorAnimated = "1";
     panel.classList.remove("lion-advisor-feedback-window");
     panel.style.animation = "none";
     void panel.offsetWidth;
@@ -545,50 +480,20 @@ document.head.appendChild(style);
   }
 
   function animateAdvisorPanel(panel) {
-    if (!panel || !panel.classList || !isAdvisorFeedbackPanel(panel) || isMapOrVisitPanel(panel)) return;
-    var overlayId = panel.id === "visit_window" ? "visit_overlay" : "feedback_overlay";
-    var overlay = document.getElementById(overlayId);
-    if (overlay && overlay.classList) {
-      overlay.classList.add("lion-advisor-feedback-scrim");
-      overlay.style.animation = "none";
-    }
-    markAdvisorChildren(panel);
-    restartAnimation(panel);
+    if (!isAdvisorFeedbackPanel(panel)) return;
+    var visitOverlay = document.getElementById("visit_overlay");
+    if (visitOverlay && visitOverlay.classList) visitOverlay.classList.add("lion-advisor-feedback-scrim");
+    restartAdvisorAnimation(panel);
   }
 
   function scanForAdvisorPanels(root) {
-    var panel = findAdvisorPanel(root || document.body);
-    if (panel) animateAdvisorPanel(panel);
+    var panels = findAdvisorPanels(root || document.body);
+    for (var i = 0; i < panels.length; i++) animateAdvisorPanel(panels[i]);
   }
 
   function delayedAdvisorScan(root) {
     window.setTimeout(function() { scanForAdvisorPanels(root || document.body); }, 0);
-    window.setTimeout(function() { scanForAdvisorPanels(document.body); }, 40);
-  }
-
-
-  function installAdvisorAppendHook() {
-    if (!window.jQuery || !window.jQuery.fn || window.jQuery.fn.__lionverseAdvisorAppendHook) return false;
-    var originalAppend = window.jQuery.fn.append;
-    window.jQuery.fn.append = function() {
-      var result = originalAppend.apply(this, arguments);
-      for (var i = 0; i < arguments.length; i++) {
-        var item = arguments[i];
-        if (typeof item === "string") {
-          if (item.indexOf("Advisor Feedback") !== -1 || item.indexOf('id="visit_window"') !== -1 || item.indexOf("id='visit_window'") !== -1 || item.indexOf('id="feedback_window"') !== -1 || item.indexOf("id='feedback_window'") !== -1) delayedAdvisorScan(document.body);
-        } else if (item && item.nodeType === 1) {
-          delayedAdvisorScan(item);
-        }
-      }
-      return result;
-    };
-    window.jQuery.fn.__lionverseAdvisorAppendHook = true;
-    return true;
-  }
-
-  if (!installAdvisorAppendHook()) {
-    window.setTimeout(installAdvisorAppendHook, 50);
-    window.setTimeout(installAdvisorAppendHook, 250);
+    window.setTimeout(function() { scanForAdvisorPanels(document.body); }, 35);
   }
 
   document.addEventListener("mousedown", function(event) {
@@ -611,6 +516,9 @@ document.head.appendChild(style);
   }, true);
 
   if (window.MutationObserver) {
+    if (window.__lionverseAdvisorObserver && window.__lionverseAdvisorObserver.disconnect) {
+      try { window.__lionverseAdvisorObserver.disconnect(); } catch (err) {}
+    }
     var advisorObserver = new MutationObserver(function(mutations) {
       for (var i = 0; i < mutations.length; i++) {
         var added = mutations[i].addedNodes;
