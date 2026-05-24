@@ -365,11 +365,13 @@ document.head.appendChild(style);
 
   #feedback_overlay.lion-advisor-feedback-scrim,
   #visit_overlay.lion-advisor-feedback-scrim {
-    background: rgba(10, 18, 30, 0.045) !important;
-    background-color: rgba(10, 18, 30, 0.045) !important;
+    background: rgba(0, 0, 0, 0.18) !important;
+    background-color: rgba(0, 0, 0, 0.18) !important;
     opacity: 1 !important;
     filter: none !important;
-    animation: lionAdvisorScrimIn 135ms ease-out both !important;
+    backdrop-filter: blur(1.15px) saturate(0.97) !important;
+    -webkit-backdrop-filter: blur(1.15px) saturate(0.97) !important;
+    animation: lionAdvisorScrimIn 155ms ease-out both !important;
   }
 
   #feedback_window.lion-advisor-feedback-window,
@@ -530,10 +532,12 @@ document.head.appendChild(style);
     var overlay = document.getElementById(id);
     if (!overlay || !overlay.classList) return;
     overlay.classList.add("lion-advisor-feedback-scrim");
-    overlay.style.setProperty("background", "rgba(10, 18, 30, 0.045)", "important");
-    overlay.style.setProperty("background-color", "rgba(10, 18, 30, 0.045)", "important");
+    overlay.style.setProperty("background", "rgba(0, 0, 0, 0.18)", "important");
+    overlay.style.setProperty("background-color", "rgba(0, 0, 0, 0.18)", "important");
     overlay.style.setProperty("opacity", "1", "important");
     overlay.style.setProperty("filter", "none", "important");
+    overlay.style.setProperty("backdrop-filter", "blur(1.15px) saturate(0.97)", "important");
+    overlay.style.setProperty("-webkit-backdrop-filter", "blur(1.15px) saturate(0.97)", "important");
   }
 
   function normalizeFeedbackOverlay() {
