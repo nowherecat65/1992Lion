@@ -14,7 +14,7 @@ nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#183F9C"
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title
 $(".container")[0].style.backgroundImage = "url(https://i.postimg.cc/rwHhsQD9/maroon-subtle-gradient-720-1.png)" 
 $("#game_window")[0].style.backgroundImage = "url(https://i.postimg.cc/8CqnKtDC/lapis-subtle-gradient-720-1.png)" 
-document.body.background = "https://i.imgur.com/Ep9ShMu.png"
+document.body.background = "https://i.postimg.cc/XYD5BZtn/1992lion-background.png"
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#8a0f18",
      "header_text_color": "#050a0f",
