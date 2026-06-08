@@ -778,29 +778,46 @@ document.head.appendChild(style);
   let playlist = new Playlist();
 
   playlist.addSong(new Song(
-    "Song Title",
-    "Artist",
-    "cover_link_here",
-    "audio_link_here"
-  ));
-
-  /*
-  Add more like this:
-
-  playlist.addSong(new Song(
-    "Free as a Bird",
-    "The Beatles",
-    "cover_link_here",
-    "audio_link_here"
+    "Hope of Deliverance",
+    "Paul McCartney",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Hope_of_deliverance_cover.jpg/250px-Hope_of_deliverance_cover.jpg",
+    "https://audio.jukehost.co.uk/019ea80f-b06c-703a-81d2-f52952bbe17a"
   ));
 
   playlist.addSong(new Song(
-    "Any Road",
-    "George Harrison",
-    "cover_link_here",
-    "audio_link_here"
+    "Right Here, Right Now",
+    "Jesus Jones",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Right_Here%2C_Right_Now_by_Jesus_Jones_UK_single_standard_edition.png/250px-Right_Here%2C_Right_Now_by_Jesus_Jones_UK_single_standard_edition.png",
+    "https://audio.jukehost.co.uk/019ea808-60fe-7309-90ef-7ebe9a5bb0da"
   ));
-  */
+
+  playlist.addSong(new Song(
+    "57 Channels (And Nothin' On)",
+    "Bruce Springsteen",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/57_Channels_%28And_Nothin%27_On%29.jpg/250px-57_Channels_%28And_Nothin%27_On%29.jpg",
+    "https://audio.jukehost.co.uk/019ea80a-a490-73de-b1fc-796994b2c922"
+  ));
+
+  playlist.addSong(new Song(
+    "Ignoreland",
+    "R.E.M.",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/R.E.M._-_Automatic_for_the_People.jpg/250px-R.E.M._-_Automatic_for_the_People.jpg",
+    "https://audio.jukehost.co.uk/019ea80c-5a2c-7302-a362-dd3c4f3bbe04"
+  ));
+
+  playlist.addSong(new Song(
+    "Cult of Personality",
+    "Living Colour",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Living_Colour_Cult_of_Personality.jpg/250px-Living_Colour_Cult_of_Personality.jpg",
+    "https://audio.jukehost.co.uk/019ea80d-eb99-729b-a770-be8b3c2f98b6"
+  ));
+
+  playlist.addSong(new Song(
+    "Democracy",
+    "Leonard Cohen",
+    "https://upload.wikimedia.org/wikipedia/en/f/f1/LeonardCohenTheFuture.gif",
+    "https://audio.jukehost.co.uk/019ea811-0313-73fc-b927-4be5e8b328ad"
+  ));
 
   /***************************************************************
    Build player HTML
